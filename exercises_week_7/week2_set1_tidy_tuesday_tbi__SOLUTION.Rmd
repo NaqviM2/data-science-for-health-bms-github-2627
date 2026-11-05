@@ -88,7 +88,7 @@ Which injury mechanism caused the most deaths in total?
 
 ```{r most-deaths}
 tbi_age |> 
-  filter(type == "Deaths" & age_group == "Total") |>
+  filter(type == "Deaths" & age_group == "0-17") |>
   arrange(desc(number_est)) |>
   head(n = 1)
 ```
